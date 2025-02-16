@@ -27,13 +27,6 @@ const projects = [
     description: "users can scan the barcode of items and then add them to basket for payment. created for a grocery store.",
     private: true,
   },
-  {
-    title: "....",
-    description: "working on something big",
-    comingSoon: true,
-  },
-   
-  // Add more projects here as needed
 ];
 
 

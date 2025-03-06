@@ -1,5 +1,5 @@
 import Header from "../Header";
-import Footer from "../Footer";
+import { DockDemo } from "../Footer2";
 
 export default function Reading() {
     return (
@@ -46,7 +46,7 @@ export default function Reading() {
         
       </ul>
     </div>
-    <Footer/>
+    <DockDemo/>
       </>
     );
   }

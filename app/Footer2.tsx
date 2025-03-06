@@ -39,7 +39,7 @@ const DATA = {
       },
       LinkedIn: {
         name: "linkedin",
-        url: "https://www.linkedin.com/in/benediktas-rocys/",
+        url: "https://www.linkedin.com/in/benny-rocys/",
         icon: Icons.linkedin,
       },
     

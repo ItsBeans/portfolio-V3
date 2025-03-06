@@ -1,5 +1,5 @@
 import Header from "../Header";
-import Footer from "../Footer";
+import { DockDemo } from '../Footer2';
 
 const foodImages = [
     {src: "/food1.jpg", caption: "Duck Ramen, South Korea"},
@@ -45,7 +45,7 @@ export default function Food() {
         ))}
       </div>
     </div>
-      <Footer/>
+      <DockDemo/>
       </>
     );
   }

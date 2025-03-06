@@ -1,6 +1,5 @@
 import Header from "../Header";
-import Footer from "../Footer";
-
+import { DockDemo } from '../Footer2';
 const projects = [
   {
     title: "portfolio website",
@@ -38,7 +37,7 @@ export default function Projects() {
       <h1 className="text-6xl font-bold text-black italic mb-12">
         projects 
       </h1>
-      <p className="text-lg text-gray-600 mb-8">a collection of projects showcasing my skills and experience in software engineering, machine learning, and data science.</p>
+      <p className="text-lg text-gray-600 mb-8">some stuff i have built.</p>
 
       <ul className="space-y-6">
   {projects.map((project) => (
@@ -53,7 +52,7 @@ export default function Projects() {
   ))}
 </ul>
     </div>
-    <Footer/>
+    <DockDemo/>
     </>
   );
 }

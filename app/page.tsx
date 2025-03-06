@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
 import { DockDemo } from './Footer2';
 import WordRotate from '@/components/ui/word-rotate';
 
@@ -24,13 +23,16 @@ export default function Home() {
             <br/>
             <br/>
             i’m a 21-year-old software engineer based in <span className="font-semibold">London</span>.
+            <br/>
+            <br/>
+            i'm currently working at <span className="font-semibold">Fifty One Degrees</span>.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            i just finished my undergrad degree in <span className="font-semibold">Computer Science with Artificial Intelligence</span> at <span className="font-semibold">King’s College London</span>.
+            i recently completed my undergrad degree in <span className="font-semibold">Computer Science with AI</span> at <span className="font-semibold">King’s College London</span>.
           </p>
           <ul className="list-disc pl-5 text-lg text-gray-700 space-y-2">
             <li>i'm really interested in <span className="font-semibold">data and machine learning</span></li>
-            <li>i enjoy <span className="font-semibold">reading</span>, <span className="font-semibold">music</span>, <span className="font-semibold">chess</span>, and <span className="font-semibold">eating good food</span>.</li>
+            <li>i enjoy <span className="font-semibold">video games</span>, <span className="font-semibold">music</span>, <span className="font-semibold">chess</span>, and <span className="font-semibold">eating good food</span>.</li>
           </ul>
           <p className="text-lg text-gray-700 mt-4">long term, i want to build something <span className="font-semibold">impactful</span> :)</p>
         </div>

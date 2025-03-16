@@ -10,9 +10,7 @@ const foodImages = [
     {src: "/food6.jpg", caption: "Ramen, London UK"},
     {src: "/food7.jpg", caption: "Cheeseburger, London UK"},
     {src: "/food8.jpg", caption: "Pork belly bbq, South Korea"},
-    
-    // Add more image paths here
-  ];
+];
   
 
 export default function Food() {
@@ -20,17 +18,17 @@ export default function Food() {
         <>
         <Header/>
         <div className="max-w-4xl mx-auto p-8">
-      <h1 className="text-6xl font-bold text-black italic mb-12">
+      <h1 className="text-6xl font-bold text-black dark:text-white italic mb-12">
         favourite foods <span role="img" aria-label="food">🍕</span>
       </h1>
-      <p className="text-lg text-gray-600 mb-8">
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
         a gallery of some of my favourite foods i've eaten so far.
       </p>
 
       {/* Gallery Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {foodImages.map((food, index) => (
-          <div key={index} className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow group">
+          <div key={index} className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow group dark:shadow-gray-800">
             <img
               src={food.src}
               alt={food.caption}
@@ -49,4 +47,3 @@ export default function Food() {
       </>
     );
   }
-  

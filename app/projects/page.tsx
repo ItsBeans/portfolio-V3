@@ -34,20 +34,24 @@ export default function Projects() {
     <>
     <Header/>
     <div className="max-w-3xl mx-auto p-8">
-      <h1 className="text-6xl font-bold text-black italic mb-12">
+      <h1 className="text-6xl font-bold text-black dark:text-white italic mb-12">
         projects 
       </h1>
-      <p className="text-lg text-gray-600 mb-8">some stuff i have built.</p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">some stuff i have built.</p>
 
       <ul className="space-y-6">
   {projects.map((project) => (
     <li key={project.title}>
-      <h2 className="font-semibold text-xl text-gray-900 hover:text-blue-600 hover:underline transition-all duration-200 mt-1 ">
-        <a href={project.url} target="_blank" rel="noopener noreferrer">
-          {project.title}
-        </a>
+      <h2 className="font-semibold text-xl text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-all duration-200 mt-1">
+        {project.url ? (
+          <a href={project.url} target="_blank" rel="noopener noreferrer">
+            {project.title}
+          </a>
+        ) : (
+          project.title
+        )}
       </h2>
-      <p className="text-lg text-gray-500 leading-relaxed">{project.description}</p>
+      <p className="text-lg text-gray-500 dark:text-gray-300 leading-relaxed">{project.description}</p>
     </li>
   ))}
 </ul>
@@ -56,6 +60,4 @@ export default function Projects() {
     </>
   );
 }
-
-  
   

@@ -37,15 +37,15 @@ export default function Home() {
         {/* Right Column: Spotify Embed */}
         <div className="flex-shrink-0 w-full md:w-1/3">
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-            my coding/study playlist.
+            my current work playlist.
           </p>
           <iframe
-            src="https://open.spotify.com/embed/playlist/7JkhowzVjYYGoLTtMDbIld?si=be476ad9f88c48e1"
-            width="200%"
-            height="380"
-            allow="encrypted-media"
-            className="rounded-lg shadow-lg"
-          ></iframe>
+              src="https://open.spotify.com/embed/playlist/3MsFaIs8y5Ab86JJEXEmEJ?si=f3b1b34dd9ec4486"
+              width="100%" 
+              className="rounded-lg shadow-lg w-full md:w-[200%]" 
+              height="380"
+              allow="encrypted-media"
+           ></iframe>
         </div>
       </div>
       <DockDemo/>

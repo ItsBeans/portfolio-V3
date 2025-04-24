@@ -5,12 +5,14 @@ import Image from 'next/image';
 const foodImages = [
     {src: "/food1.jpg", caption: "Duck Ramen, South Korea"},
     {src: "/food2.jpg", caption: "Garlic Pasta, South Korea"},
-    {src: "/food3.jpg", caption: "Tteokbokki, South Korea"},
-    {src: "/food4.jpg", caption: "Mango bingsu, South Korea"},
-    {src: "/food5.jpg", caption: "Pork bbq, South Korea"},
+    {src: "/food3.jpg", caption: " 떡볶이, South Korea"},
+    {src: "/food4.jpg", caption: "망고빙수, South Korea"},
+    {src: "/food5.jpg", caption: "삼겹살, South Korea"},
     {src: "/food6.jpg", caption: "Ramen, London UK"},
     {src: "/food7.jpg", caption: "Cheeseburger, London UK"},
-    {src: "/food8.jpg", caption: "Pork belly bbq, South Korea"},
+    {src: "/food8.jpg", caption: "삼겹살, South Korea"},
+    {src: "/food9.jpeg", caption: "돈까스, South Korea"},
+    {src: "/food10.jpeg", caption: "Eggs Benedict, London UK"},
 ];
   
 export default function Food() {

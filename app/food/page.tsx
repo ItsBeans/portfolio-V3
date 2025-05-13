@@ -13,6 +13,7 @@ const foodImages = [
     {src: "/food8.jpg", caption: "삼겹살, South Korea"},
     {src: "/food9.jpeg", caption: "돈까스, South Korea"},
     {src: "/food10.jpeg", caption: "Eggs Benedict, London UK"},
+    {src: "/food11.jpeg", caption: "갈비, South Korea"},
 ];
   
 export default function Food() {

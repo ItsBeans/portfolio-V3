@@ -31,6 +31,12 @@ export default function Reading() {
           <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">Physics and Philosophy</h2>
           <p className="text-gray-500 dark:text-gray-300">by Werner Heisenberg - cool book about quantum theory and how it messes with how we think about reality.</p>
         </li>
+
+        <li>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">Brief Answers to the Big Questions</h2>
+          <p className="text-gray-500 dark:text-gray-300">by Stephen Hawking - a legend talking about some huge questions.</p>
+        </li>
+       
        
       </ul>
     </div>

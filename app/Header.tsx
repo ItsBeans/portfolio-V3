@@ -51,7 +51,7 @@ export default function Header() {
         food 
       </Link>
       
-      {/* Theme toggle button with icons */}
+   
       <button
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         className="text-gray-400 dark:text-gray-300 hover:text-black dark:hover:text-white"
@@ -67,7 +67,7 @@ export default function Header() {
   );
 }
 
-// Sun icon for light mode
+
 function SunIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -93,7 +93,7 @@ function SunIcon({ className }: { className?: string }) {
   );
 }
 
-// Moon icon for dark mode
+
 function MoonIcon({ className }: { className?: string }) {
   return (
     <svg

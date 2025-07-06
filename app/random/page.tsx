@@ -19,9 +19,13 @@ export default function Random() {
             <img
               src="/raon.jpeg"
               alt="Raon"
-              className="mx-auto rounded-2xl shadow-md w-full max-w-sm"
+              className="mx-auto rounded-2xl shadow-md w-full max-w-sm mr-2"
             />
+          <div className="mt-6 md:mt-0 md:ml-4">
+            
         </div>
+        </div>
+       
       </div>
       <DockDemo />
     </>

@@ -7,9 +7,9 @@ export default function Reading() {
         <Header/>
         <div className="max-w-3xl mx-auto p-8">
       <h1 className="text-6xl font-bold text-black dark:text-white italic mb-12">
-        reading list 
+        bookshelf
       </h1>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">a collection of books / papers / textbooks I recommend you to read.</p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">a collection of stuff I have read since 2024.</p>
       
       <ul className="space-y-6">
         <li>
@@ -37,6 +37,16 @@ export default function Reading() {
           <p className="text-gray-500 dark:text-gray-300">by Stephen Hawking - a legend talking about some huge questions.</p>
         </li>
        
+       <li>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">Dopamine Nation</h2>
+          <p className="text-gray-500 dark:text-gray-300">by Anna Lembke - talks about dopamine and addiction.</p>
+       </li>
+      
+      <li>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">The Vegetarian</h2>
+          <p className="text-gray-500 dark:text-gray-300">by Han Kang - nobel prize winning book.</p>
+       </li>
+
        
       </ul>
     </div>

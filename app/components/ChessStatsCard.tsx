@@ -33,7 +33,7 @@ export default function ChessStatsCard({ username }: { username: string }) {
   }, [username]);
 
   return (
-    <div className="w-full max-w-sm rounded-xl bg-zinc-900 text-white p-5 shadow-md space-y-4 transition-all">
+    <div className="w-full max-w-sm pl-6 rounded-xl bg-zinc-900 text-white p-5 shadow-md space-y-4 transition-all">
       <h2 className="text-lg font-semibold tracking-tight">live chess rating</h2>
 
       {loading ? (

@@ -50,7 +50,17 @@ export default function Header() {
       >
         food 
       </Link>
-      
+
+      <Link
+        href="/random"
+        className={`hover:text-black dark:hover:text-white ${
+          pathname === '/random' 
+            ? 'text-black dark:text-white' 
+            : 'text-gray-400 dark:text-gray-300'
+        }`}
+      >
+        random
+      </Link>
    
       <button
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

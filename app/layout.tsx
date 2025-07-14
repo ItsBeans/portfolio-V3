@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
+import { Analytics } from '@vercel/analytics/react';
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,6 +37,7 @@ export default function RootLayout({
         <ThemeProvider defaultTheme="system" storageKey="benny-theme">
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

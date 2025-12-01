@@ -19,7 +19,7 @@ export default function Home() {
           my name is Benny.
             <br/>
             <br/>
-            i'm a 21-year-old software engineer based in <span className="font-semibold">London</span>.
+            i'm a 22-year-old software engineer based in <span className="font-semibold">London</span>.
             <br/>
             <br/>
             i'm currently working at <span className="font-semibold">Fifty One Degrees</span>.

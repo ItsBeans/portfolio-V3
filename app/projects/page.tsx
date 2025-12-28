@@ -2,19 +2,14 @@ import Header from "../Header";
 import { DockDemo } from '../Footer2';
 const projects = [
   {
-    title: "portfolio website",
-    description: "the website you are at right now! built with Next.js and Tailwind CSS, showcasing my projects and skills.",
-    url: "https://github.com/ItsBeans/portfolioV3",
-  },
-  {
     title: "natural language translation",
-    description: "a machine learning project that fine-tunes models for translation.",
+    description: "final year dissertation/project, fine-tuning and comparison of several models for language translation.",
     url: "https://github.com/ItsBeans/translator",
   },
   {
     title: "beauty salon website",
     description: "developed a responsive website using Next.js and Tailwind CSS for a local beauty business.",
-    url: "https://www.rigoletabeauty.com/",
+    url: "https://github.com/ItsBeans/beauty-site-v2",
   },
   {
     title: "student exam performance",

@@ -1,34 +1,81 @@
+'use client';
+
 import Header from "../Header";
 import { DockDemo } from "../Footer2";
 import ChessStatsCard from "../components/ChessStatsCard";
 import NowPlaying from "../components/NowPlaying";
+import { motion } from "framer-motion";
 
 export default function Random() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="max-w-5xl mx-auto p-8">
-        <h1 className="text-6xl font-bold text-black dark:text-white italic mb-12">
+      
+      <main className="flex-grow max-w-3xl mx-auto p-12 w-full">
+        <h1 className="text-6xl font-bold text-gray-700 dark:text-white italic mb-4">
           random
         </h1>
-        <p className="text-black dark:text-white font-medium mb-4">some random things</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 items-start">
-          <div className="space-y-6">
-            <NowPlaying />
+        <p className="text-lg text-gray-500 dark:text-gray-400 mb-12 italic">
+          random bits and pieces.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          {/* Left Column: Music & Chess */}
+          <div className="space-y-12">
+            <section>
+              <h3 className="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6">Now Listening</h3>
+              <NowPlaying />
+            </section>
+
+            <section>
+              <h3 className="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6">Chess Stats</h3>
+              <ChessStatsCard username={"bennyhahahaha"} />
+            </section>
           </div>
-            <img
-              src="/raon.jpeg"
-              alt="Raon"
-              className="mx-auto rounded-2xl shadow-md w-full max-w-sm mr-2"
-            />
-          <div className="mt-6 md:mt-0 md:ml-4">
-            
+
+          {/* Right Column: The Cat & Interests */}
+          <div className="space-y-12">
+             <section>
+              <h3 className="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6">Raon (The Cat)</h3>
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="relative rounded-2xl overflow-hidden shadow-xl"
+              >
+                <img
+                  src="/raon.jpeg"
+                  alt="Raon the cat"
+                  className="w-full h-auto object-cover"
+                />
+              </motion.div>
+              <p className="text-xs text-gray-400 mt-4 italic text-center">
+                professional nap taker
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xs uppercase tracking-widest text-gray-400 font-bold mb-4">Current Interests</h3>
+              <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-3">
+                <li className="flex gap-3">
+                  <span className="text-gray-300">🎮</span> 
+                  <span>Currently playing: <span className="text-gray-800 dark:text-gray-200">Elden Ring</span></span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-gray-300">🍜</span> 
+                  <span>Best London find: <span className="text-gray-800 dark:text-gray-200">Miga (1 Mare St)</span></span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-gray-300">🎧</span> 
+                  <span>Genre rotation: <span className="text-gray-800 dark:text-gray-200">Korean Indie</span></span>
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
-        </div>
-       
-      </div>
-      <DockDemo />
-    </>
+      </main>
+
+      <footer className="pb-12">
+        <DockDemo />
+      </footer>
+    </div>
   );
 }
-

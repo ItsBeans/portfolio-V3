@@ -3,6 +3,7 @@
 import Header from "../Header";
 import { DockDemo } from "../Footer2";
 import ChessStatsCard from "../components/ChessStatsCard";
+import LeagueLiveCard from "../components/LeagueLiveCard";
 import NowPlaying from "../components/NowPlaying";
 import { motion } from "framer-motion";
 
@@ -20,20 +21,21 @@ export default function Random() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          {/* Left Column: Music & Chess */}
+          {/* Left Column: Live Feeds & Gaming */}
           <div className="space-y-12">
             <section>
               <h3 className="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6">Now Listening</h3>
               <NowPlaying />
             </section>
 
-            <section>
-              <h3 className="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6">Chess Stats</h3>
+            <section className="space-y-8">
+              <h3 className="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6">Gaming Stats</h3>
               <ChessStatsCard username={"bennyhahahaha"} />
+              <LeagueLiveCard summonerName={"raon"} tagline={"hehe"} />
             </section>
           </div>
 
-          {/* Right Column: The Cat & Interests */}
+          {/* Right Column: Personality & Interests */}
           <div className="space-y-12">
              <section>
               <h3 className="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6">Raon (The Cat)</h3>

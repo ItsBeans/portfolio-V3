@@ -69,7 +69,6 @@ export default function Reading() {
         </h1>
        
 
-        {/* Currently Reading Section */}
         <div className="mb-12">
           <p className="text-xs uppercase tracking-widest text-gray-400 font-bold mb-2">Currently Reading</p>
           <p className="text-gray-700 dark:text-gray-200">
@@ -103,7 +102,6 @@ export default function Reading() {
                 by {book.author}
               </p>
 
-              {/* Reveal summary on hover */}
               <motion.div
                 initial={{ height: 0, opacity: 0 }}
                 animate={{ 

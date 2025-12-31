@@ -39,7 +39,6 @@ export default function Projects() {
     <div className="flex flex-col min-h-screen">
       <Header />
       
-      {/* Removed min-h-screen from this div to bring the dock up */}
       <main className="flex-grow max-w-3xl mx-auto p-12 text-left w-full">
         <h1 className="text-6xl font-bold text-gray-700 dark:text-white italic mb-4">
           projects
@@ -114,7 +113,6 @@ export default function Projects() {
         </div>
       </main>
 
-      {/* Dock stays at the bottom of the content */}
       <footer className="pb-12">
         <DockDemo />
       </footer>

@@ -60,18 +60,7 @@ export default function LeagueLiveCard({ summonerName, tagline }: { summonerName
             </div>
 
             
-            <div className="space-y-2">
-              <div className="flex justify-between text-[10px] uppercase font-bold tracking-tighter text-gray-500">
-                <span>Goal: Diamond IV</span>
-                <span>{data.progress}%</span>
-              </div>
-              <div className="h-1.5 w-full bg-gray-100 dark:bg-gray-800 rounded-full overflow-hidden">
-                <div 
-                  className={`h-full transition-all duration-1000 ${barColor}`} 
-                  style={{ width: `${data.progress}%` }} 
-                />
-              </div>
-            </div>
+        
 
            
             <div className="grid grid-cols-2 gap-4 pt-2">
